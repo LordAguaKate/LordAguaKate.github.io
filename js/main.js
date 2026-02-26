@@ -66,4 +66,35 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 4. Validación robusta del formulario de contacto
+    const contactForm = document.getElementById('contact-form');
+    const emailInput = document.getElementById('email');
+    const emailError = document.getElementById('email-error');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            // Expresión regular (Regex) robusta para validar correos reales
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (!emailRegex.test(emailInput.value)) {
+                // Si el correo NO es válido, detenemos el envío del formulario
+                e.preventDefault();
+                
+                // Mostramos el texto de error
+                emailError.classList.remove('hidden');
+                
+                // Le ponemos un borde rojo al input para resaltarlo
+                emailInput.classList.add('border-red-500');
+                emailInput.classList.remove('border-slate-600');
+            }
+        });
+
+        // Este evento quita el error en cuanto el usuario empieza a corregir el texto
+        emailInput.addEventListener('input', function() {
+            emailError.classList.add('hidden');
+            emailInput.classList.remove('border-red-500');
+            emailInput.classList.add('border-slate-600');
+        });
+    }
 });
