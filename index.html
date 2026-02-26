@@ -261,7 +261,7 @@
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex justify-between items-start mb-4">
                             <h3 class="text-xl font-bold text-white leading-tight">EntrenamientoIA</h3>
-                            <a href="https://github.com/LordAguaKate" target="_blank" class="text-slate-400 hover:text-white transition-colors" title="Ver Código"><i class="fa-brands fa-github text-xl"></i></a>
+                            <a href="https://github.com/LordAguaKate/EntrenamientoIA" target="_blank" class="text-slate-400 hover:text-white transition-colors" title="Ver Código"><i class="fa-brands fa-github text-xl"></i></a>
                         </div>
                         <p class="text-slate-400 text-sm mb-6 flex-1">
                             Proyecto de Transfer Learning (MobileNetV2) diseñado para clasificar residuos domésticos, con arquitectura optimizada para un rápido despliegue en dispositivos IoT de bajos recursos (Raspberry Pi).
@@ -283,7 +283,7 @@
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex justify-between items-start mb-4">
                             <h3 class="text-xl font-bold text-white leading-tight">controlContainer</h3>
-                            <a href="https://github.com/LordAguaKate" target="_blank" class="text-slate-400 hover:text-white transition-colors" title="Ver Código"><i class="fa-brands fa-github text-xl"></i></a>
+                            <a href="https://github.com/LordAguaKate/controlContainer" target="_blank" class="text-slate-400 hover:text-white transition-colors" title="Ver Código"><i class="fa-brands fa-github text-xl"></i></a>
                         </div>
                         <p class="text-slate-400 text-sm mb-6 flex-1">
                             Sistema inteligente de reciclaje automatizado. Implementa reconocimiento de materiales mediante visión artificial y un robusto sistema de validación de usuarios por código QR.
@@ -305,7 +305,7 @@
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex justify-between items-start mb-4">
                             <h3 class="text-xl font-bold text-white leading-tight">Customer Churn Prediction (Telecom)</h3>
-                            <a href="https://github.com/LordAguaKate" target="_blank" class="text-slate-400 hover:text-white transition-colors" title="Ver Código"><i class="fa-brands fa-github text-xl"></i></a>
+                            <a href="https://github.com/LordAguaKate/Customer-Churn-Prediction" target="_blank" class="text-slate-400 hover:text-white transition-colors" title="Ver Código"><i class="fa-brands fa-github text-xl"></i></a>
                         </div>
                         <p class="text-slate-400 text-sm mb-6 flex-1">
                             Análisis predictivo de la pérdida de clientes en el sector de las telecomunicaciones, empleando modelos estadísticos y Machine Learning para identificar factores clave preventivos e insights de negocio.
@@ -326,7 +326,7 @@
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex justify-between items-start mb-4">
                             <h3 class="text-xl font-bold text-white leading-tight">ETL_Python</h3>
-                            <a href="https://github.com/LordAguaKate" target="_blank" class="text-slate-400 hover:text-white transition-colors" title="Ver Código"><i class="fa-brands fa-github text-xl"></i></a>
+                            <a href="https://github.com/LordAguaKate/ETL_Python" target="_blank" class="text-slate-400 hover:text-white transition-colors" title="Ver Código"><i class="fa-brands fa-github text-xl"></i></a>
                         </div>
                         <p class="text-slate-400 text-sm mb-6 flex-1">
                             Scripting robusto documentando y ejecutando procesos fundamentales de Extracción, Transformación y Carga (ETL) para garantizar un manejo eficiente y depuración de grandes volúmenes de datos brutos.
@@ -348,7 +348,7 @@
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex justify-between items-start mb-4">
                             <h3 class="text-xl font-bold text-white leading-tight">Actualizar_sistema_Linux_SCRIPT</h3>
-                            <a href="https://github.com/LordAguaKate" target="_blank" class="text-slate-400 hover:text-white transition-colors" title="Ver Código"><i class="fa-brands fa-github text-xl"></i></a>
+                            <a href="https://github.com/LordAguaKate/Actualizar_sistema_Linux_SCRIPT" target="_blank" class="text-slate-400 hover:text-white transition-colors" title="Ver Código"><i class="fa-brands fa-github text-xl"></i></a>
                         </div>
                         <p class="text-slate-400 text-sm mb-6 flex-1">
                             Desarrollo de un script de Python automatizado enfocado en la administración de sistemas basados en Debian (como Ubuntu). Facilita y agiliza la actualización del gestor de paquetes (apt) sin intervención manual constante.
@@ -374,7 +374,9 @@
             </div>
 
             <div class="bg-dark-surface border border-slate-700 p-8 md:p-10 rounded-2xl shadow-2xl">
-                <form action="#" method="POST" class="space-y-6">
+                <form id="contact-form" action="https://formsubmit.co/aguakatecontact@gmail.com" method="POST" class="space-y-6">
+                    <input type="hidden" name="_captcha" value="True">
+
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <label for="name" class="block text-sm font-medium text-slate-300 mb-2">Nombre</label>
@@ -383,6 +385,7 @@
                         <div>
                             <label for="email" class="block text-sm font-medium text-slate-300 mb-2">Correo Electrónico</label>
                             <input type="email" id="email" name="email" class="w-full bg-dark-bg border border-slate-600 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-dark-primary focus:border-transparent transition-all" placeholder="tucorreo@ejemplo.com" required>
+                            <p id="email-error" class="text-red-500 text-sm mt-2 hidden">Por favor, ingresa un correo válido (ej. nombre@dominio.com).</p>
                         </div>
                     </div>
 
